@@ -1,0 +1,19 @@
+        .msg {
+            width: 50%;
+            height: 40px;
+            margin: 20px;
+            color: grey;
+            align-items: center;
+            justify-content: center;
+            display: none;
+        }
+        
+        .msg-success {
+            background-color: darkcyan;
+            color: white;
+        }
+        
+        .msg-error {
+            background-color: crimson;
+            color: white;
+        }

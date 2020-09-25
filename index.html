@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Books List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/booklist.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+
+            <!--App Header -->
+            <h2 class="center">
+                My<span class="purple-text">Books</span>List
+            </h2>
+            <!-- App Body-->
+            <div class="col s12 push-s1 ">
+
+                <!-- Show Messages -->
+                <div class="col s10 msg z-depth-1"></div>
+
+                <!-- Form -->
+                <div class="col s10 input-field">
+                    <i class="material-icons prefix">subtitles</i>
+                    <input type="text" id="title" autocomplete="off">
+                    <label for="title" class="flow-text">Title</label>
+                </div>
+                <div class="col s10 input-field">
+                    <i class="material-icons prefix">person_pin</i>
+                    <input type="text" id="author" autocomplete="off">
+                    <label for="author" class="flow-text">Author</label>
+                </div>
+                <div class="col s10 input-field">
+                    <i class="material-icons prefix">confirmation_number</i>
+                    <input type="text" id="isbn" autocomplete="off">
+                    <label for="isbn" class="flow-text">ISBN</label>
+                </div>
+
+                <!-- Loader -->
+                <div class=" col s10 progress" style="display: none;">
+                    <div class="indeterminate"></div>
+                </div>
+
+                <!-- Button -->
+                <div class="col s12">
+                    <a href="#" class=" waves-effect waves-light btn col s10 ">Add Book</a>
+                </div>
+
+                <!-- Result Table -->
+                <table class="col s10 striped highlight bordered centered table-books">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Author</th>
+                            <th>ISBN</th>
+                            <th><i class="material-icons">cancel</i></th>
+                        </tr>
+                    </thead>
+                    <tbody class='t-body'></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/booklist.js"></script>
+</body>
+
+</html>
